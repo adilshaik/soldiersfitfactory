@@ -18,9 +18,9 @@ const index = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <main className='mt-32'>
+      <main className='mt-20'>
         <Nav />
-        <Sale />
+        {/* <Sale /> */}
         <Branding />
         <Workouts />
         <FreeTrial />
