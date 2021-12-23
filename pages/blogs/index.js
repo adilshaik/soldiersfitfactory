@@ -4,7 +4,7 @@ import { BlogCard } from '../../components/BlogCard';
 import { Footer } from '../../components/layout/Footer';
 import { Nav } from '../../components/layout/Nav';
 
-const blogs = () => {
+const Blogs = () => {
   const [posts, setPosts] = useState(undefined);
   const grabData = async () => {
     const res = await import(`../../content/blogs/${'content'}.md`);
@@ -34,7 +34,10 @@ const blogs = () => {
               </h2>
             </div>
             <div className='mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none'>
-              {posts && posts.map((post) => <BlogCard post={post} />)}
+              {posts &&
+                posts.map((post, index) => (
+                  <BlogCard key={index} post={post} />
+                ))}
             </div>
           </div>
         </div>
@@ -44,4 +47,4 @@ const blogs = () => {
   );
 };
 
-export default blogs;
+export default Blogs;
