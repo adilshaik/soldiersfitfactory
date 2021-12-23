@@ -1,4 +1,3 @@
-import { Router, useRouter } from 'next/dist/client/router';
 import Head from 'next/head';
 import React, { useState, useEffect } from 'react';
 import { BlogCard } from '../../components/BlogCard';
