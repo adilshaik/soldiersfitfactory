@@ -16,9 +16,9 @@ const navigation = [
 export const Nav = () => {
   return (
     <Popover>
-      <div className='relative pt-6 px-4 sm:px-6 lg:px-8 z-10'>
+      <div className='z-20 relative pt-6 px-4 sm:px-6 lg:px-8 z-10'>
         <nav
-          className='relative flex items-center justify-between sm:h-10 lg:justify-start'
+          className='z-20 relative flex items-center justify-between sm:h-10 lg:justify-start'
           aria-label='Global'
         >
           <div className='flex items-center flex-grow flex-shrink-0 lg:flex-grow-0'>
@@ -58,7 +58,7 @@ export const Nav = () => {
       >
         <Popover.Panel
           focus
-          className='absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden'
+          className='absolute z-20 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden'
         >
           <div className='rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden z-20'>
             <div className='px-5 pt-4 flex items-center justify-between'>
@@ -72,7 +72,7 @@ export const Nav = () => {
                 </Popover.Button>
               </div>
             </div>
-            <div className='px-2 pt-2 pb-3 space-y-1'>
+            <div className='z-20 px-2 pt-2 pb-3 space-y-1'>
               {navigation.map((item) => (
                 <Link key={item.name} href={item.href}>
                   <span className='block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 cursor-pointer'>

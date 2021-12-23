@@ -17,7 +17,7 @@ export const Branding = () => {
       </div>
       <div
         data-aos='fade-right'
-        className='absolute bottom-10 max-w-7xl mx-auto pl-16 pt-12 sm:pt-12'
+        className='absolute bottom-5 max-w-7xl mx-auto pl-5 pt-12 sm:pt-12'
       >
         <h1 className='text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl'>
           HUSTLE HUT

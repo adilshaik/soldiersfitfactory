@@ -20,7 +20,7 @@ const navigation = {
   social: [
     {
       name: 'Instagram',
-      href: '#',
+      href: 'https://instagram.com/soldiers_fit_factory?utm_medium=copy_link',
       icon: (props) => (
         <svg fill='currentColor' viewBox='0 0 24 24' {...props}>
           <path

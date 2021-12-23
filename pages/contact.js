@@ -240,7 +240,7 @@ export default function Example() {
                       <li>
                         <a
                           className='text-teal-200 hover:text-teal-100'
-                          href='#'
+                          href='https://instagram.com/soldiers_fit_factory?utm_medium=copy_link'
                         >
                           <span className='sr-only'>Facebook</span>
                           <BsInstagram size={20} />
