@@ -19,7 +19,11 @@ const Blogs = () => {
     <React.Fragment>
       <Head>
         <title>SFF | Blogs</title>
-        <link rel='icon' href='/favicon.ico' />
+        <meta
+          name='description'
+          content='Our workouts can be done both at the center and at home with the help from us.'
+        />
+        <link rel='icon' href='/favicon.png' />
       </Head>
       <Nav />
       <main className='mt-10'>

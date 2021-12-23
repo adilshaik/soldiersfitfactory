@@ -2,7 +2,7 @@ import React from 'react';
 
 const Quote = () => {
   return (
-    <div className='flex flex-col max-w-7xl mx-auto mb-10 px-10'>
+    <div className='overflow-hidden flex flex-col max-w-7xl mx-auto mb-10 px-10'>
       <div
         data-aos='fade-right'
         data-aos-duration='1000'
