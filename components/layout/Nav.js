@@ -22,29 +22,14 @@ export const Nav = () => {
       className='z-30 fixed w-full text-white overflow-hidden top-0 left-0 shadow-xl'
       style={{ backgroundColor: 'rgb(189,179,132)' }}
     >
-      <div className='flex'>
-        <img
-          src='/camo.webp'
-          alt='camo'
-          className='repeat w-96 h-20 object-cover opacity-50'
-        />
-        <img
-          src='/camo.webp'
-          alt='camo'
-          className='repeat w-96 h-20 object-cover opacity-50'
-        />
-        <img
-          src='/camo.webp'
-          alt='camo'
-          className='repeat w-96 h-20 object-cover opacity-50'
-        />
-        <img
-          src='/camo.webp'
-          alt='camo'
-          className='repeat w-96 h-20 object-cover opacity-50'
-        />
-      </div>
-      <Popover className='fixed top-0 left-0 w-full z-20 '>
+      <Popover
+        className='fixed top-0 left-0 w-full z-20 '
+        style={{
+          backgroundColor: 'rgb(189,179,132)',
+          backgroundImage:
+            'linear-gradient(to right, rgba(0,0,0, 0.7), rgba(0,0,0,0.6)), url(/camo.webp)',
+        }}
+      >
         <div className='flex justify-between items-center px-4 py-4 sm:px-6 md:justify-start md:space-x-10'>
           <div className='flex justify-start lg:w-0 md:flex-1'>
             <Link href='/'>
@@ -55,7 +40,7 @@ export const Nav = () => {
                     src='/logo.png'
                     alt='sff'
                   />
-                  <span className='hidden lg:block text-2xl font-black uppercase mb-1 ml-3 text-gray-800'>
+                  <span className='hidden lg:block text-2xl font-black uppercase mb-1 ml-3 text-white'>
                     Soldiers Fit Factory
                   </span>
                 </div>
@@ -74,7 +59,7 @@ export const Nav = () => {
               {navigation.map((navigate) => {
                 return (
                   <Link key={navigate.name} href={navigate.href}>
-                    <span className='cursor-pointer text-xl font-black uppercase text-gray-800'>
+                    <span className='cursor-pointer text-xl font-bold tracking-wider uppercase text-white'>
                       {navigate.name}
                     </span>
                   </Link>
