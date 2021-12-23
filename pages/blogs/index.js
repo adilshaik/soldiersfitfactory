@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { BlogCard } from '../../components/BlogCard';
 import { Footer } from '../../components/layout/Footer';
 import { Nav } from '../../components/layout/Nav';
+import Head from 'next/head';
 
 const Blogs = () => {
   const [posts, setPosts] = useState(undefined);

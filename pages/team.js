@@ -1,7 +1,5 @@
 import React from 'react';
 import Head from 'next/head';
-import { TeamCard } from '../components/TeamCard';
-import { Hero } from '../components/Hero';
 import { Nav } from '../components/layout/Nav';
 import { Team } from '../components/Team';
 import { Footer } from '../components/layout/Footer';

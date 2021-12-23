@@ -2,6 +2,7 @@ import { MailIcon, PhoneIcon } from '@heroicons/react/outline';
 import { Nav } from '../components/layout/Nav';
 import { Footer } from '../components/layout/Footer';
 import { BsInstagram } from 'react-icons/bs';
+import Head from 'next/head';
 import React from 'react';
 
 const offices = [
