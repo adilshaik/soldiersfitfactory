@@ -3,7 +3,7 @@ import Head from 'next/head';
 import React, { useEffect, useState, useCallback } from 'react';
 import { Footer } from '../../components/layout/Footer';
 import { Nav } from '../../components/layout/Nav';
-import Image from 'next/image';
+
 const Blog = () => {
   const router = useRouter();
   const [blogData, setBlogData] = useState(undefined);
@@ -87,7 +87,7 @@ const Blog = () => {
                 <div className='relative text-base mx-auto max-w-prose lg:max-w-none'>
                   <figure>
                     <div className='aspect-w-12 aspect-h-7 lg:aspect-none'>
-                      <Image
+                      <img
                         className='rounded-lg shadow-lg object-cover object-center'
                         src={blogData && blogData.imageUrl}
                         alt=''
