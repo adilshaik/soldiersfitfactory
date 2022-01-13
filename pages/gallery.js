@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { Nav } from '../components/layout/Nav';
 import { Footer } from '../components/layout/Footer';
 import { ImageGallery } from '../components/ImageGallery';
+import { Slider } from '../components/Slider';
 
 const gallery = () => {
   return (
@@ -18,7 +19,8 @@ const gallery = () => {
 
       <Nav />
       <main className='mt-10'>
-        <ImageGallery />
+        {/* <ImageGallery /> */}
+        <Slider />
       </main>
       <Footer />
     </div>
