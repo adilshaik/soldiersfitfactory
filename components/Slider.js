@@ -64,8 +64,11 @@ export const Slider = () => {
   }, [index]);
   return (
     <React.Fragment>
-      <main>
-        <section className='relative w-3/4 mx-auto flex justify-center items-center h-screen text-center overflow-hidden'>
+      <main className='mt-32'>
+        <h2 className='text-3xl text-center tracking-tight font-extrabold text-gray-900 sm:text-4xl'>
+          Our Gallery
+        </h2>
+        <section className='relative w-3/4 mx-auto flex justify-center height items-center text-center overflow-hidden'>
           {people.map((person, personIndex) => {
             const { id, image, name, title, quote } = person;
 
@@ -84,13 +87,20 @@ export const Slider = () => {
             return (
               <article
                 key={id}
-                className={`absolute w-full p-12 activeSlide transition duration-1000 ease-in-out ${position}`}
+                className={`absolute w-1/2 space-y-8 xl:space-y-14 activeSlide transition duration-1000 ease-in-out ${position}`}
               >
                 <img
-                  className='height mx-auto w-11/12 object-cover shadow-2xl'
+                  className='mx-auto h-72 w-full object-cover rounded-md'
                   src={image}
                   alt={name}
                 />
+                <h2 className='flex items-end justify-center'>
+                  <span className='text-4xl font-bold text-gray-500'>
+                    0{index + 1}
+                  </span>
+                  <span className='text-3xl mx-1'>/</span>
+                  <span className='text-xl font-bold'>0{data.length}</span>
+                </h2>
               </article>
             );
           })}
