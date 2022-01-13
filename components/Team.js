@@ -82,7 +82,6 @@ export const Team = () => {
                 <div className='-mt-px flex divide-x divide-gray-200'>
                   <div className='w-0 flex-1 flex hover:cursor-pointer '>
                     <a
-                      target='_blank'
                       href={person.instaUrl}
                       className='relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-bl-lg hover:text-gray-500'
                     >

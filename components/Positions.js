@@ -105,7 +105,7 @@ export const Positions = () => {
                 Join our team
               </h2>
               <p className='text-lg text-white'>
-                Contact us if you're passionate to work with us.
+                Contact us if you are passionate to work with us.
               </p>
               <Link href='/contact'>
                 <a className='block w-full py-3 px-5 text-center bg-white border border-transparent rounded-md shadow-md text-base font-medium text-indigo-700 hover:bg-gray-50 sm:inline-block sm:w-auto'>
