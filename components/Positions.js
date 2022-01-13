@@ -105,9 +105,7 @@ export const Positions = () => {
                 Join our team
               </h2>
               <p className='text-lg text-white'>
-                Varius facilisi mauris sed sit. Non sed et duis dui leo,
-                vulputate id malesuada non. Cras aliquet purus dui laoreet diam
-                sed lacus, fames.
+                Contact us if you're passionate to work with us.
               </p>
               <Link href='/contact'>
                 <a className='block w-full py-3 px-5 text-center bg-white border border-transparent rounded-md shadow-md text-base font-medium text-indigo-700 hover:bg-gray-50 sm:inline-block sm:w-auto'>

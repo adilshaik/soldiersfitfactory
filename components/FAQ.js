@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     question: 'What kind of workout formats are available at SFF?',
-    answer: `At SFF, you’ll find a wide variety of workout formats, such as - Workout, Strenth Training, Boxing, Dance Fitness and, Yoga. These workouts focus on strength, muscle endurance, flexibility, stamina & balance. So mix it up, pick formats that help you achieve your personal fitness goals. We can assure you that your sessions will be more fun, interesting, and less monotonous.  You can find more info about all our workout formats here. If you prefer to workout at home, we've got you covered! You can follow DIY and LIVE videos that are meant for both beginner & advanced levels and focus on building strength, stamina & mobility.`,
+    answer: `At SFF, you’ll find a wide variety of workout formats, such as - Workout, Strength Training, Boxing, Dance Fitness and, Yoga. These workouts focus on strength, muscle endurance, flexibility, stamina & balance. So mix it up, pick formats that help you achieve your personal fitness goals. We can assure you that your sessions will be more fun, interesting, and less monotonous.  You can find more info about all our workout formats here. If you prefer to workout at home, we've got you covered! You can follow DIY and LIVE videos that are meant for both beginner & advanced levels and focus on building strength, stamina & mobility.`,
   },
   {
     question: 'How personal training will be given?',
