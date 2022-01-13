@@ -68,7 +68,7 @@ export const Slider = () => {
         <h2 className='text-3xl text-center tracking-tight font-extrabold text-gray-900 sm:text-4xl'>
           Our Gallery
         </h2>
-        <section className='relative w-3/4 mx-auto flex justify-center height items-center text-center overflow-hidden'>
+        <section className='relative w-full md:w-3/4 mx-auto flex justify-center height items-center text-center overflow-hidden'>
           {people.map((person, personIndex) => {
             const { id, image, name, title, quote } = person;
 
@@ -87,7 +87,7 @@ export const Slider = () => {
             return (
               <article
                 key={id}
-                className={`absolute w-1/2 space-y-8 xl:space-y-14 activeSlide transition duration-1000 ease-in-out ${position}`}
+                className={`absolute w-11/12 lg:w-1/2 space-y-8 xl:space-y-14 activeSlide transition duration-1000 ease-in-out ${position}`}
               >
                 <img
                   className='mx-auto h-72 w-full object-cover rounded-md'
@@ -106,13 +106,13 @@ export const Slider = () => {
           })}
           <button
             onClick={() => setIndex(index - 1)}
-            className='absolute top-84 bg-gray-500 text-2xl rounded-sm text-white grid place-items-center w-18 left-0 transform -translate-y-2/4 hover:bg-yellow-600 transition duration-500 ease-in-out'
+            className='absolute top-52 bg-gray-500 text-2xl rounded-sm text-white grid place-items-center w-18 left-0 transform -translate-y-2/4 hover:bg-yellow-600 transition duration-500 ease-in-out'
           >
             <FiChevronLeft />
           </button>
           <button
             onClick={() => setIndex(index + 1)}
-            className='absolute top-84 bg-gray-500 text-2xl rounded-sm text-white grid place-items-center w-18 right-0 transform -translate-y-2/4 hover:bg-yellow-600 transition duration-500 ease-in-out'
+            className='absolute top-52 bg-gray-500 text-2xl rounded-sm text-white grid place-items-center w-18 right-0 transform -translate-y-2/4 hover:bg-yellow-600 transition duration-500 ease-in-out'
           >
             <FiChevronRight />
           </button>
