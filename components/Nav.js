@@ -1,16 +1,16 @@
-import React from 'react';
-import { Fragment } from 'react';
-import { Popover, Transition } from '@headlessui/react';
-import { MenuIcon, XIcon } from '@heroicons/react/outline';
-import Link from 'next/link';
+import React from "react";
+import { Fragment } from "react";
+import { Popover, Transition } from "@headlessui/react";
+import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import Link from "next/link";
 
 const navigation = [
-  { name: 'Home', href: '/' },
-  { name: 'Cafit', href: '/cafit' },
-  { name: 'Blogs', href: '/blogs' },
-  { name: 'Team', href: '/team' },
-  { name: 'Gallery', href: '/gallery' },
-  { name: 'Contact', href: '/contact' },
+  { name: "Home", href: "/" },
+  { name: "Cafit", href: "/cafit" },
+  { name: "Blogs", href: "/blogs" },
+  { name: "Team", href: "/team" },
+  { name: "Gallery", href: "/gallery" },
+  { name: "Contact", href: "/contact" },
 ];
 
 export const Nav = () => {

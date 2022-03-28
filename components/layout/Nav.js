@@ -1,33 +1,33 @@
-import React, { Fragment } from 'react';
-import { Popover, Transition } from '@headlessui/react';
-import { MenuIcon, XIcon } from '@heroicons/react/outline';
-import Link from 'next/link';
+import React, { Fragment } from "react";
+import { Popover, Transition } from "@headlessui/react";
+import { MenuIcon, XIcon, PhoneIcon } from "@heroicons/react/outline";
+import Link from "next/link";
 
 const navigation = [
-  { name: 'Home', href: '/' },
-  { name: 'Cafit', href: '/cafit' },
-  { name: 'Blogs', href: '/blogs' },
-  { name: 'Team', href: '/team' },
-  { name: 'Gallery', href: '/gallery' },
-  { name: 'Contact', href: '/contact' },
+  { name: "Home", href: "/" },
+  { name: "Cafit", href: "/cafit" },
+  { name: "Blogs", href: "/blogs" },
+  { name: "Team", href: "/team" },
+  { name: "Gallery", href: "/gallery" },
+  { name: "Contact", href: "/contact" },
 ];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ');
+  return classes.filter(Boolean).join(" ");
 }
 
 export const Nav = () => {
   return (
     <div
       className='z-30 fixed w-full text-white overflow-hidden top-0 left-0 shadow-xl'
-      style={{ backgroundColor: 'rgb(189,179,132)' }}
+      style={{ backgroundColor: "rgb(189,179,132)" }}
     >
       <Popover
         className='fixed top-0 left-0 w-full z-20 '
         style={{
-          backgroundColor: 'rgb(189,179,132)',
+          backgroundColor: "rgb(189,179,132)",
           backgroundImage:
-            'linear-gradient(to right, rgba(0,0,0, 0.7), rgba(0,0,0,0.6)), url(/camo.webp)',
+            "linear-gradient(to right, rgba(0,0,0, 0.7), rgba(0,0,0,0.6)), url(/camo.webp)",
         }}
       >
         <div className='flex justify-between items-center px-4 py-4 sm:px-6 md:justify-start md:space-x-10'>
@@ -35,11 +35,7 @@ export const Nav = () => {
             <Link href='/'>
               <a className='flex items-center'>
                 <div className='flex flex-row items-center'>
-                  <img
-                    className='h-12 w-auto sm:h-12'
-                    src='/logo.png'
-                    alt='sff'
-                  />
+                  <img className='h-12 w-auto sm:h-12' src='/logo.png' alt='sff' />
                   <span className='hidden lg:block text-2xl font-black uppercase mb-1 ml-3 text-white'>
                     Soldiers Fit Factory
                   </span>
@@ -65,6 +61,11 @@ export const Nav = () => {
                   </Link>
                 );
               })}
+              <Link href='tel:+91 6303767594'>
+                <span className='cursor-pointer text-xl font-bold tracking-wider uppercase text-white underline'>
+                  6303767594
+                </span>
+              </Link>
             </Popover.Group>
           </div>
         </div>
@@ -88,11 +89,7 @@ export const Nav = () => {
                   <Link href='/'>
                     <a className='flex items-center'>
                       <div className='flex flex-row items-center'>
-                        <img
-                          className='h-12 w-auto sm:h-12'
-                          src='/logo.png'
-                          alt='sff'
-                        />
+                        <img className='h-12 w-auto sm:h-12' src='/logo.png' alt='sff' />
                         <span className='hidden lg:block text-xl font-semibold mb-1'>
                           SOLDIERS FIT FACTORY
                         </span>
@@ -118,6 +115,11 @@ export const Nav = () => {
                       </Link>
                     );
                   })}
+                  <Link href='tel:+91 6303767594'>
+                    <span className='cursor-pointer text-xl font-bold tracking-wider uppercase text-white underline'>
+                      6303767594
+                    </span>
+                  </Link>
                 </div>
               </div>
             </div>
