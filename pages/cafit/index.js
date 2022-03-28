@@ -1,5 +1,6 @@
 import Head from 'next/head';
-import { Hero } from '../components/Hero';
+import { Hero } from '../../components/cafit/Hero';
+import { ProductList } from '../../components/cafit/ProductList';
 
 export default function Home() {
   return (
@@ -15,13 +16,7 @@ export default function Home() {
 
       <main>
         <Hero />
-        <h1
-          data-aos='fade-down'
-          data-aos-duration='2000'
-          className='text-center font-black text-gray-800 text-7xl my-20'
-        >
-          Coming Soon...
-        </h1>
+        <ProductList />
       </main>
     </div>
   );

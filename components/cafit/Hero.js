@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Nav } from './Nav';
+import { Nav } from '../Nav';
 
 export function Hero() {
   return (

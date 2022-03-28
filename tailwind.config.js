@@ -11,6 +11,9 @@ module.exports = {
         'warm-gray': colors.warmGray,
         teal: colors.teal,
       },
+      gridTemplateRows: {
+        '[auto,auto,1fr]': 'auto auto 1fr',
+      },
     },
   },
   plugins: [require('@tailwindcss/aspect-ratio')],
